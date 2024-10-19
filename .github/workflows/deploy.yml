@@ -26,6 +26,9 @@ jobs:
         
       - name: Install Angular CLI
         run: npm install -g @angular/cli
+
+      - name: Run Tests
+        run: npm run test --watch=false --browsers=ChromeHeadless
         
       - name: Build Angular app
         run: ng build --base-href "./"
